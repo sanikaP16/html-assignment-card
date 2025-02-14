@@ -2,62 +2,67 @@
 <html lang="en">
   <head>
     <style>
-      section {
-        width: 410px;
-        box-sizing: border-box;
-        border: 0.5px solid rgba(0, 0, 0, 40%);
-        margin: auto;
-        padding: 40px;
+      * {
+        margin: 0px;
         font-family: sans-serif;
+        color: rgba(0, 0, 0, 0.2);
+        word-spacing: 0.5%;
+      }
+      section {
+        box-sizing: border-box;
+        width: 400px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        margin: 100px auto;
+        padding: 40px;
+      }
+      section > * {
+        margin-bottom: 10px;
       }
       h1 {
-        font-size: 32px;
-        color: rgba(0, 0, 0, 60%);
         font-weight: 300;
-        margin: 0px;
+        color: rgba(0, 0, 0, 0.7);
       }
-      h1 + div {
-        border: 1px solid rgba(0, 0, 0, 80%);
+      div {
+        border: 1px solid black;
         width: 50px;
-        margin: 10px 0px 10px 0px;
+      }
+      .info {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 100;
+        color: rgba(0, 0, 0, 0.5);
+      }
+      a {
+        display: block;
+        background-color: #4184e1;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 5px;
+        text-align: center;
+        color: white;
+        border-radius: 30px;
       }
       .description {
         font-size: 12px;
-        color: rgba(0, 0, 0, 30%);
+        line-height: 18px;
         margin-bottom: 0px;
-        line-height: 17px;
-      }
-      .info {
-        color: rgba(0, 0, 0, 40%);
-        font-size: 14px;
-        line-height: 17px;
-      }
-      .arrange-button {
-        background-color: #4184e1;
-        color: white;
-        text-transform: uppercase;
-        border-radius: 20px;
-        text-align: center;
-        padding: 5px 80px 5px 80px;
       }
     </style>
     <title>Card</title>
   </head>
   <body>
-    <main>
-      <section>
-        <h1>Build your first chatbot in 10 minutes!</h1>
-        <div></div>
-        <p class="info">
-          Have a bot answering questions form customers on you website within 10
-          minutes of signing up for ChatBot.
-        </p>
-        <div class="arrange-button">Try now →</div>
-        <p class="description">
-          By clicking try not you create an account and agree to our Terms and
-          Conditions and Privacy Policy.
-        </p>
-      </section>
-    </main>
+    <section>
+      <h1>Build your first chatbot in 10 minutes!</h1>
+      <div></div>
+      <p class="info">
+        Have a bot answering questions form customers on you website within 10
+        minutes of signing up for ChatBot.
+      </p>
+      <a href="#" class="arrange-button">Try now →</a>
+      <p class="description">
+        By clicking try not you create an account and agree to our Terms and
+        Conditions and Privacy Policy.
+      </p>
+    </section>
   </body>
 </html>
